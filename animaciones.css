@@ -1,0 +1,53 @@
+/* Animacion Fade */
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Animacion Slide-Up */
+
+@keyframes slide-up {
+    from {
+        transform: translateY(100px);
+    }
+
+    to {
+        transform: translateY(0);
+
+    }
+    
+}
+
+/* Animacion Slide-right */
+
+@keyframes slide-right {
+    from {
+        transform: translateX(100px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+/****** Animacion a h1 ******/
+
+#hero .hero_info h1 {
+    opacity: 0;
+    animation: fade 0.8s ease-in forwards /*forwards es para que el elemento quede fijo al final*/, slide-up 1.5s ease-out;
+    animation-delay: 0.3s;
+}
+
+/******* Animacion a p de hero  */
+
+#hero .hero_info p {
+    opacity: 0;
+    animation: fade 0.8s ease-in forwards /*forwards es para que el elemento quede fijo al final*/, slide-right 1.5s ease-out;
+    animation-delay: 0.5s;
+}

@@ -1,0 +1,131 @@
+/* ******* Reset ******* */
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+ }
+
+ *,
+ *::after,
+ *::before {
+    box-sizing: inherit;
+ }
+
+
+body {
+    font-family: 'Rajdhani', sans-serif;
+    margin: 0;
+}
+
+/******* HEADER  *******/
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    z-index: 999;
+    width: 100%;
+    height: 100px; 
+    background-color: transparent;
+    position: fixed;
+}
+
+.header__title {
+     color: #fff; 
+     font-weight: bold;
+     transition: all 1s ease-in-out;
+} 
+
+.header__title:hover {
+    color: #fe5f2f;
+}
+
+.nav-bar__ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-bar__ul a {
+    font-weight: 500;
+    text-decoration: none;
+    padding: 2.5rem;
+    color: #fff;
+    opacity: 0.9;
+    transition: all 1s ease-in-out;
+}
+
+.nav-bar__ul a:hover {
+    opacity: 0.8;
+}
+
+.nav-bar--link__btn {
+    display: block;
+    border: 1px solid #553d2a;
+    border-radius: 10px;
+    background-color: #553d2a;
+     padding: 5px 0; 
+    opacity: 0.8;
+    align-self: center;
+    transition: all 1s ease-in-out;
+}
+
+
+/******* HERO ********/
+
+
+section#hero {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url(assets/coffe-jpg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    border-bottom: 8px solid #222; 
+}
+
+section#hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8),
+    transparent 60%, rgba(0, 0, 0, 0.8));
+    z-index: inherit;
+}
+
+#hero .hero_info {
+    padding-top: 80px;
+    padding-right: 100px;
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+#hero .hero_info h1 {
+    font-size: 64px;
+    line-height: 1.1;
+    color: #fe5f2f;
+    opacity: 0.8;
+}
+
+#hero .hero_info p {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 1.1;
+    color: #fff;
+    opacity: 0.9;
+}
+
+
+
+
