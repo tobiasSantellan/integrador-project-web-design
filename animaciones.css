@@ -19,7 +19,6 @@
 
     to {
         transform: translateY(0);
-
     }
     
 }
@@ -34,6 +33,29 @@
     to {
         transform: translateX(0);
     }
+}
+
+/* Animacion Slide-left */
+
+@keyframes slide-left {
+    from {
+        transform: translateX(-100px);
+        color: #fe5f2f;
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+
+/******* Animcaion al header title *******/
+
+.header__title {
+    opacity: 0;
+    animation: fade 0.8s ease-in forwards /*forwards es para que el elemento quede fijo al final*/, slide-left 1.5s ease-out;
+    animation-delay: 0.6;
+
 }
 
 /****** Animacion a h1 ******/

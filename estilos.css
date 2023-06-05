@@ -26,16 +26,16 @@ body {
     padding: 1rem;
     z-index: 999;
     width: 100%;
-    height: 100px; 
+    height: 100px;
     background-color: transparent;
     position: fixed;
 }
 
 .header__title {
-     color: #fff; 
-     font-weight: bold;
+     color: #fff;
+     font-weight: 600;
      transition: all 1s ease-in-out;
-} 
+}
 
 .header__title:hover {
     color: #fe5f2f;
@@ -64,7 +64,7 @@ body {
     border: 1px solid #553d2a;
     border-radius: 10px;
     background-color: #553d2a;
-     padding: 5px 0; 
+     padding: 5px 0;
     opacity: 0.8;
     align-self: center;
     transition: all 1s ease-in-out;
@@ -85,7 +85,6 @@ section#hero {
     display: flex;
     /* align-items: center; */
     justify-content: center;
-    border-bottom: 8px solid #222; 
 }
 
 section#hero::before {
@@ -126,6 +125,187 @@ section#hero::before {
     opacity: 0.9;
 }
 
+.hero_boxs {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+    gap: 0.5rem;
+}
+
+.hero-box {
+    border: 1px solid #fff;
+    font-size: 20px;
+    padding: 1px 55px;
+    margin: 30px;
+    color: #fff;
+    opacity: 0.4;
+    line-height: 1.2;
+    letter-spacing: 1.1;
+}
 
 
+/******* ABOUT  ********/
 
+section#about {
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    height: 100vh;
+    border: 1px solid #222;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 75px 50px;
+}
+
+.about-info {
+    width: 52%;
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-info h2 {
+    font-weight: 400;
+    font-size: 3.5rem;
+    opacity: 0.9;
+    background: linear-gradient(to right, #fa996c, #fe5f2f);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.about-info h3 {
+    font-size: 2.5rem;
+    font-weight: 300;
+     background: linear-gradient(to right, #999, #222);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.about-img {
+    flex: 0 1 auto;
+}
+
+.about-img img {
+    border-radius: 1rem;
+    opacity: 0.3;
+    border: 2px solid #f5cb86;
+}
+
+
+/******* TYPES *******/
+
+section#types {
+    background-color: #000;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+section#types h2 {
+    font-weight: 500;
+    align-self: center;
+    font-size: 3.5rem;
+    opacity: 0.9;
+    background: linear-gradient(to right, #fe5f2f, #fa996c);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    border-bottom: 1px solid #fe5f2f;
+    height: 80px;
+    line-height: 50px;
+}
+
+
+.card-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+.card {
+    position: relative;
+    width: 450px;
+    height: 500px;
+    margin: 1rem;
+}
+
+.card .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .9s;  
+}
+
+.card .front {
+    transform: perspective(600px) rotateY(0deg);
+    /* box-shadow: 0 5px 10px #111; */
+}
+
+.card img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+}
+
+.card .front h4 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #f3f3f3;
+    background-color: rgba(0, 0, 0, 0.4);
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+.card .back {
+    transform: perspective(600px) rotateY(180deg);
+    background-color: #000;
+    opacity: 0.5;
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    /* box-shadow: 0 5px 10px #111; */
+    border: 1px solid #333;
+}
+
+.card .back h4 {
+    font-weight: 400;
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #f3f3f3;
+    height: 50px;
+    line-height: 50px;
+}
+
+.card .back p {
+    font-size: 20px;
+}
+
+.card:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}
