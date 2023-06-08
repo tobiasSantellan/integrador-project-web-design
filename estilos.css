@@ -122,8 +122,8 @@ section#hero::before {
     font-size: 36px;
     font-weight: 500;
     line-height: 1.1;
-    color: #fff;
-    opacity: 0.9;
+    color: #f3f3f3;
+    opacity: 0.5;
 }
 
 .hero_boxs {
@@ -154,7 +154,7 @@ section#about {
     color: #fff;
     width: 100%;
     height: 100vh;
-    border: 1px solid #222;
+    border-top: 1px solid #222;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -240,6 +240,58 @@ section#about {
     opacity: .7;
 }
 
+/* Three Cards */
+
+.three-cards {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: 1px solid #222;
+}
+
+.container-card {
+    width: 450px;
+    height: 670px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-card img {
+    width: 80%;
+    height: 400px;
+    object-fit: cover;
+    align-self: center;
+    margin-top: 1rem;
+    border-radius: 5px;
+    opacity: .6; 
+}
+
+.container-card h2 {
+    color: #f3f3f3;
+    margin-top: 2rem;
+    text-align: center;
+    opacity: .8;
+}
+
+.container-card span {
+    color: #fe5f2f;
+}
+
+.container-card p {
+    color: #f3f3f3;
+    margin: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    opacity: .8;
+}
+
+
 
 /******* TYPES *******/
 
@@ -249,6 +301,7 @@ section#types {
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 section#types h2 {
@@ -260,25 +313,20 @@ section#types h2 {
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
-    border-bottom: 1px solid #fe5f2f;
-    height: 80px;
-    line-height: 50px; 
 }
 
 
 .card-container {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
-    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 80%;
 }
 
 
 .card {
     position: relative;
-    width: 420px;
-    height: 400px;
+    width: 300px;
+    height: 350px;
     margin: 1rem;
 }
 
@@ -293,8 +341,8 @@ section#types h2 {
 }
 
 .card .front {
+    border: 1px solid rgba(0, 0, 0, 0.1);
     transform: perspective(600px) rotateY(0deg);
-    /* box-shadow: 0 5px 10px #111; */
 }
 
 .card img {
@@ -303,7 +351,9 @@ section#types h2 {
     height: 100%;
     object-fit: cover;
     opacity: 0.7;
+    
 }
+
 
 .card .front h4 {
     position: absolute;
@@ -315,35 +365,23 @@ section#types h2 {
     background-color: rgba(0, 0, 0, 0.4);
     text-align: center;
     letter-spacing: 1px;
-    font-weight: 300;
+    font-weight: 500;
 }
 
 .card .back {
     transform: perspective(600px) rotateY(180deg);
-    background-color: #000;
-    opacity: 0.5;
     padding: 15px;
     color: #f3f3f3;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    text-align: center;
-    /* box-shadow: 0 5px 10px #111; */
-    border: 1px solid #333;
-}
-
-.card .back h4 {
-    font-weight: 400;
-    font-size: 30px;
-    margin-top: 20px;
-    letter-spacing: 1px;
-    border-bottom: 1px solid #f3f3f3;
-    height: 50px;
-    line-height: 50px;
+    box-shadow: 2px 2px #222;
 }
 
 .card .back p {
-    font-size: 20px;
+    align-self: center;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+    font-weight: 500;
 }
 
 .card:hover .front {
@@ -352,6 +390,36 @@ section#types h2 {
 
 .card:hover .back {
     transform: perspective(600px) rotateY(360deg);
+}
+
+aside {
+    position: absolute;
+    top: 55%;
+    right: 0;
+   
+}
+
+.aside-content {
+    border: 1px solid #222;
+    margin-right: 2rem;
+    padding: 0 1rem;
+    background-color: #fe5f2f;
+    transition: .5s ease;
+    cursor: pointer;
+}
+
+.aside-content:hover {
+    background-color: #000;
+}
+
+
+.aside-content a {
+    text-decoration: none;
+}
+
+.aside-content h3 {
+    text-align: center;
+    color: #f3f3f3;
 }
 
 
