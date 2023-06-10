@@ -183,7 +183,7 @@ section#about {
 .about-info h3 {
     font-size: 2.5rem;
     font-weight: 300;
-     background: linear-gradient(to right, #999, #222);
+     background: linear-gradient(to right, #999, #777);
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
