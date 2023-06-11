@@ -14,16 +14,35 @@ html {
 body {
     font-family: 'Rajdhani', sans-serif;
     margin: 0;
-    background: rgb(0,0,0);
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(11,11,11,1) 100%);
+    background-color: #000;
     overflow: hidden;
 }
 
-.form {
-    margin-top: 150px;
-    padding: 3px;
-    width: 50%;
-    margin: 10rem auto;
+
+section#contacto {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* display: grid;
+    place-items: center; */
+    display: flex;
+    background-color: #000;
+}
+
+.formulario {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    box-shadow: 1px 9px 20px -5px #222;
+    border-radius: 30px;
+
+    margin: 100px 2rem;
 }
 
 h1 {
@@ -100,6 +119,6 @@ p {
     opacity: .9;
 }
 
-.form *::placeholder {
+.formulario *::placeholder {
     color: #553d2a;
 }
