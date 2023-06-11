@@ -180,13 +180,15 @@
     }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 320px) {
+    
     .hero_info h1 {
         margin-left: 2rem;
     }
 
     .hero_info p {
         margin-left: 2rem;
+        display: none;
     }
 
     section#about {
@@ -219,6 +221,12 @@
         align-items: center;
     }
 
+    section#contacto {
+        display: flex;
+        justify-content: center;
+
+    }
+
     .texto h2 {
         text-align: center;
     }
@@ -227,8 +235,8 @@
         text-align: center;
     }
 
-    form {
-        align-items: center;
+    .form {
+        width: 100%;
     }
 
     .input-box input[type="submit"] {
