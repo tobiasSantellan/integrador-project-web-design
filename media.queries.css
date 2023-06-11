@@ -10,6 +10,7 @@
     .about-icons {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        margin-top: 20px;
     } 
 
     

@@ -33,7 +33,7 @@ body {
 
 .header__title {
      color: #fff;
-     font-weight: 500;
+     font-weight: 600;
      transition: all 1s ease-in-out;
 }
 
@@ -455,6 +455,7 @@ section#contacto {
     background-color: #000;
     box-shadow: 1px 9px 20px -5px #222;
     border-radius: 30px;
+    margin-bottom: 50px;
 }
 
 .form {
