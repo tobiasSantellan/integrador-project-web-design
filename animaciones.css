@@ -66,13 +66,20 @@
     animation-delay: 0.3s;
 }
 
-/******* Animacion a p de hero  */
+/******* Animacion a hero-p */
 
 #hero .hero_info p {
     opacity: 0;
     animation: fade 0.8s ease-in forwards /*forwards es para que el elemento quede fijo al final*/, slide-right 1.5s ease-out;
     animation-delay: 0.5s;
 }
-
+ 
+@media (max-width: 850px) {
+    #toggle-menu:checked ~ .nav-bar__ul {
+        opacity: 0;
+        animation: fade 0.8s ease-in forwards /*forwards es para que el elemento quede fijo al final*/, slide-right 1.5s ease-out;
+        animation-delay: 0.3s;
+    }
+}
 
 
