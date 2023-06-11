@@ -1,3 +1,6 @@
+/* ******* Media Queries Desktop First ******* */
+
+
 @media (max-width: 1290px) {
     .about-img img {
         width: 500px;
