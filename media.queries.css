@@ -232,6 +232,7 @@
     .contact-form {
         display: flex;
         margin: 0;
+        margin-bottom: 10px;
     }
 
     .texto h2 {
