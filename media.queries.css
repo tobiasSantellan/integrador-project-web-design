@@ -246,6 +246,24 @@
         /* width: 80%; */
         align-self: center;
     }
+
+    /* Formulario de Registro e Inicio de sesión */
+
+    /* section#contact {
+       
+
+    } */
+    .formulario {
+        /* margin: 0px 1rem;
+        margin: 0 auto; */
+       
+    }
+
+    .container {
+        margin-top: 0px;
+        padding: 2rem;
+        margin-bottom: 100px;
+    }
 }
 
 

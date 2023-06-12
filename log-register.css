@@ -19,12 +19,10 @@ body {
 }
 
 
-section#contacto {
+section#contact {
     position: relative;
     width: 100%;
     height: 100%;
-    /* display: grid;
-    place-items: center; */
     display: flex;
     background-color: #000;
 }
@@ -41,8 +39,9 @@ section#contacto {
     background-color: #000;
     box-shadow: 1px 9px 20px -5px #222;
     border-radius: 30px;
-
     margin: 100px 2rem;
+    /* padding-right: 10rem;
+    padding-left: 10rem; */
 }
 
 h1 {
