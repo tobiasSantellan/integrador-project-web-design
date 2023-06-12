@@ -224,10 +224,13 @@
         align-items: center;
     }
 
-    section#contacto {
+    section#contact {
         display: flex;
         justify-content: center;
+    }
 
+    .contact-form {
+        display: flex;
     }
 
     .texto h2 {
