@@ -231,6 +231,7 @@
 
     .contact-form {
         display: flex;
+        margin: 0;
     }
 
     .texto h2 {
