@@ -24,6 +24,8 @@ section#contact {
     width: 100%;
     height: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #000;
 }
 
@@ -31,17 +33,17 @@ section#contact {
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     gap: 20px;
-    padding: 20px;
-    width: 100%;
-    height: 100%;
+    /* padding: 20px; */
+    width: 500px;
+    height: 500px;
     background-color: #000;
-    box-shadow: 1px 9px 20px -5px #222;
+    /* box-shadow: 1px 9px 20px -5px #222; */
     border-radius: 30px;
-    margin: 100px 2rem;
-    /* padding-right: 10rem;
-    padding-left: 10rem; */
+    margin: 0 auto;
+    /* padding-right: 20rem;
+    padding-left: 20rem; */
 }
 
 h1 {
@@ -52,12 +54,14 @@ h1 {
 }
 
 .container {
-    width: 100%;
+    width: 350px;
+    height: 350px;
     padding: 1rem;
 }
 
 .input-box {
     display: flex;
+    justify-content: flex-start;
     align-items: center;
     margin-bottom: 1rem;
     border-radius: 5px;
